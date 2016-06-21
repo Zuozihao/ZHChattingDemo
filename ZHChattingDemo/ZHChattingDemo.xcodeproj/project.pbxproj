@@ -17,6 +17,8 @@
 		982D6D0A1D17E34100AF1F21 /* ZHChattingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D091D17E34100AF1F21 /* ZHChattingDemoUITests.m */; };
 		982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */; };
 		982D6D1D1D18D48000AF1F21 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D1C1D18D48000AF1F21 /* header.jpg */; };
+		982D6D201D190F9900AF1F21 /* ZHFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */; };
+		982D6D231D190FB900AF1F21 /* ZHChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */; };
 		D2AE408A009CD453AFD6F1E0 /* libPods-ZHChattingDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84606A05D6C3D85B36241809 /* libPods-ZHChattingDemoTests.a */; };
 		D5CD5C24D4BAA017C9E895C4 /* libPods-ZHChattingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2563399E6CF65093E0D1B27F /* libPods-ZHChattingDemo.a */; };
 		F49F1FB57B831699948D48DC /* libPods-ZHChattingDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */; };
@@ -67,6 +69,10 @@
 		982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBaseViewController.m; sourceTree = "<group>"; };
 		982D6D1A1D18CF8500AF1F21 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		982D6D1C1D18D48000AF1F21 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
+		982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHFriendViewController.h; sourceTree = "<group>"; };
+		982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHFriendViewController.m; sourceTree = "<group>"; };
+		982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChattingViewController.h; sourceTree = "<group>"; };
+		982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChattingViewController.m; sourceTree = "<group>"; };
 		C13B6A79015BB61ED792CFA1 /* Pods-ZHChattingDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHChattingDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHChattingDemoUITests/Pods-ZHChattingDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHChattingDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +137,10 @@
 				982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */,
 				982D6CEA1D17E34000AF1F21 /* ViewController.h */,
 				982D6CEB1D17E34000AF1F21 /* ViewController.m */,
+				982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */,
+				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
+				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
+				982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */,
 				982D6CED1D17E34000AF1F21 /* Main.storyboard */,
 				982D6CF01D17E34000AF1F21 /* Assets.xcassets */,
 				982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */,
@@ -466,6 +476,8 @@
 				982D6CEC1D17E34000AF1F21 /* ViewController.m in Sources */,
 				982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */,
 				982D6CE91D17E34000AF1F21 /* AppDelegate.m in Sources */,
+				982D6D201D190F9900AF1F21 /* ZHFriendViewController.m in Sources */,
+				982D6D231D190FB900AF1F21 /* ZHChattingViewController.m in Sources */,
 				982D6CE61D17E34000AF1F21 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

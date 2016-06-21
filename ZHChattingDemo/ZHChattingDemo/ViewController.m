@@ -72,6 +72,8 @@
     logIn.frame = CGRectMake(30, CGRectGetMaxY(passwordLabel.frame) + 30, kAppScreenWidth - 60, 40);
     [logIn addTarget:self action:@selector(logInAction) forControlEvents:UIControlEventTouchUpInside];
     [logIn setTitle:@"登录" forState:UIControlStateNormal];
+    logIn.backgroundColor = RGB(67, 174, 231);
+    [self.view addSubview:logIn];
     
     UIBarButtonItem *registerButton = [[UIBarButtonItem alloc] initWithTitle:@"注 册" style:UIBarButtonItemStylePlain target:self action:@selector(goRegiste)];
     [registerButton setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateNormal];
@@ -119,7 +121,14 @@
 }
 
 - (void)goOnline {
+    //上线操作
+    DDXMLElement *el = [DDXMLElement elementWithName:@"presence"];
+    DDXMLElement *available = [DDXMLElement attributeWithName:@"type" stringValue:@"available"];
+    [el addAttribute:available];
     
+    //发送上线消息
+    [_xmppStream sendElement:el];
+
 }
 
 //1.连接成功
@@ -129,12 +138,15 @@
         
     //验证登陆密码
     BOOL isKeyRight = [_xmppStream authenticateWithPassword:password error:nil];
+    
 }
 
 //2.登陆验证密码成功
 //XMPP
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
     NSLog(@"登陆成功");
+    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+    [self goOnline];
     //登录成功后上线
 }
 
@@ -142,6 +154,8 @@
 - (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(NSXMLElement *)error {
     
     NSLog(@"%@",error);
+    [SVProgressHUD showErrorWithStatus:@"密码错误"];
+    
 }
 
 //4.注册成功

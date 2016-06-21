@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XMPPFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DF5E2A21181DE01EA2BC008E6A60765</key>
+		<key>414F0C05C76B8A95301C0A736C2C44A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A91626138781E0599636D41AE17B45F3</key>
+		<key>CD7A99DEEEC3CD87CE813AE7B34D4DA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E98BC237B4C5021527481380059FFBD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

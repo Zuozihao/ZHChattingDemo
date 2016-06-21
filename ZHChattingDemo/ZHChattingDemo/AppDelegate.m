@@ -11,6 +11,8 @@
 
 @interface AppDelegate ()
 
+@property(strong, nonatomic)XMPPStream * xmppStream;
+
 @end
 
 @implementation AppDelegate
@@ -18,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建xmppstream
+    self.xmppStream = [[XMPPStream alloc]init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     self.window.rootViewController = nav;
     return YES;

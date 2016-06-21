@@ -13,6 +13,7 @@
 #import <XMPP.h>
 #import <XMPPReconnect.h>
 #import <XMPPRosterCoreDataStorage.h>
+#import <SVProgressHUD.h>
 
 
 #define kAppScreenHeight ([UIScreen mainScreen].bounds.size.height)

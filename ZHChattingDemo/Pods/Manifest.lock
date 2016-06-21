@@ -11,6 +11,7 @@ PODS:
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
+  - SVProgressHUD (2.0.3)
   - XMPPFramework (3.6.6):
     - XMPPFramework/Authentication (= 3.6.6)
     - XMPPFramework/BandwidthMonitor (= 3.6.6)
@@ -155,13 +156,15 @@ PODS:
     - XMPPFramework/Core
 
 DEPENDENCIES:
+  - SVProgressHUD (~> 2.0.3)
   - XMPPFramework (~> 3.6.6)
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b
 
-PODFILE CHECKSUM: 22846be445906d2f7bba61a1bde689bdf4a8cd8f
+PODFILE CHECKSUM: c5198a8ff9dd1d5c83456daead056f6274a07926
 
 COCOAPODS: 1.0.1
