@@ -15,6 +15,8 @@
 		982D6CF41D17E34000AF1F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */; };
 		982D6CFF1D17E34100AF1F21 /* ZHChattingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6CFE1D17E34100AF1F21 /* ZHChattingDemoTests.m */; };
 		982D6D0A1D17E34100AF1F21 /* ZHChattingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D091D17E34100AF1F21 /* ZHChattingDemoUITests.m */; };
+		982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */; };
+		982D6D1D1D18D48000AF1F21 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D1C1D18D48000AF1F21 /* header.jpg */; };
 		D2AE408A009CD453AFD6F1E0 /* libPods-ZHChattingDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84606A05D6C3D85B36241809 /* libPods-ZHChattingDemoTests.a */; };
 		D5CD5C24D4BAA017C9E895C4 /* libPods-ZHChattingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2563399E6CF65093E0D1B27F /* libPods-ZHChattingDemo.a */; };
 		F49F1FB57B831699948D48DC /* libPods-ZHChattingDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */; };
@@ -61,6 +63,10 @@
 		982D6D051D17E34100AF1F21 /* ZHChattingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHChattingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		982D6D091D17E34100AF1F21 /* ZHChattingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHChattingDemoUITests.m; sourceTree = "<group>"; };
 		982D6D0B1D17E34100AF1F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982D6D171D18CDA300AF1F21 /* ZHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBaseViewController.h; sourceTree = "<group>"; };
+		982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBaseViewController.m; sourceTree = "<group>"; };
+		982D6D1A1D18CF8500AF1F21 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		982D6D1C1D18D48000AF1F21 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		C13B6A79015BB61ED792CFA1 /* Pods-ZHChattingDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHChattingDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHChattingDemoUITests/Pods-ZHChattingDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHChattingDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,8 +124,11 @@
 		982D6CE31D17E34000AF1F21 /* ZHChattingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				982D6D1B1D18D46E00AF1F21 /* Image */,
 				982D6CE71D17E34000AF1F21 /* AppDelegate.h */,
 				982D6CE81D17E34000AF1F21 /* AppDelegate.m */,
+				982D6D171D18CDA300AF1F21 /* ZHBaseViewController.h */,
+				982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */,
 				982D6CEA1D17E34000AF1F21 /* ViewController.h */,
 				982D6CEB1D17E34000AF1F21 /* ViewController.m */,
 				982D6CED1D17E34000AF1F21 /* Main.storyboard */,
@@ -135,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				982D6CE51D17E34000AF1F21 /* main.m */,
+				982D6D1A1D18CF8500AF1F21 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +165,14 @@
 				982D6D0B1D17E34100AF1F21 /* Info.plist */,
 			);
 			path = ZHChattingDemoUITests;
+			sourceTree = "<group>";
+		};
+		982D6D1B1D18D46E00AF1F21 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D1C1D18D48000AF1F21 /* header.jpg */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 		BCA95450FC040D8E5FA50741 /* Pods */ = {
@@ -297,6 +315,7 @@
 				982D6CF41D17E34000AF1F21 /* LaunchScreen.storyboard in Resources */,
 				982D6CF11D17E34000AF1F21 /* Assets.xcassets in Resources */,
 				982D6CEF1D17E34000AF1F21 /* Main.storyboard in Resources */,
+				982D6D1D1D18D48000AF1F21 /* header.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				982D6CEC1D17E34000AF1F21 /* ViewController.m in Sources */,
+				982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */,
 				982D6CE91D17E34000AF1F21 /* AppDelegate.m in Sources */,
 				982D6CE61D17E34000AF1F21 /* main.m in Sources */,
 			);
@@ -590,8 +610,10 @@
 			baseConfigurationReference = 5ED064C45D72F642E70E017F /* Pods-ZHChattingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Fox/Desktop/ZHChattingDemo/ZHChattingDemo/ZHChattingDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ZHChattingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iFox.ZHChattingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,8 +625,10 @@
 			baseConfigurationReference = 17E7EE4FCA7E533DCD2F264B /* Pods-ZHChattingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Fox/Desktop/ZHChattingDemo/ZHChattingDemo/ZHChattingDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ZHChattingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iFox.ZHChattingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
