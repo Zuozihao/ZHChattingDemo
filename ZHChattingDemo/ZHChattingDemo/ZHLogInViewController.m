@@ -6,11 +6,11 @@
 //  Copyright © 2016年 左梓豪. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ZHLogInViewController.h"
 #import "ZHChattingViewController.h"
 #import "XMPPManager.h"
 
-@interface ViewController ()
+@interface ZHLogInViewController ()
 
 @property(nonatomic, strong)UITextField *userNameField;
 @property(nonatomic, strong)UITextField *passwordField;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ViewController
+@implementation ZHLogInViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

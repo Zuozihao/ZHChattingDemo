@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ZHLogInViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,7 +29,7 @@
     //使组件生效
     [xmppReconnect activate:self.xmppStream];
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ZHLogInViewController new]];
     self.window.rootViewController = nav;
     return YES;
 }

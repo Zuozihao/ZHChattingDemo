@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		982D6CE61D17E34000AF1F21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6CE51D17E34000AF1F21 /* main.m */; };
 		982D6CE91D17E34000AF1F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6CE81D17E34000AF1F21 /* AppDelegate.m */; };
-		982D6CEC1D17E34000AF1F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6CEB1D17E34000AF1F21 /* ViewController.m */; };
+		982D6CEC1D17E34000AF1F21 /* ZHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6CEB1D17E34000AF1F21 /* ZHLogInViewController.m */; };
 		982D6CEF1D17E34000AF1F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982D6CED1D17E34000AF1F21 /* Main.storyboard */; };
 		982D6CF11D17E34000AF1F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982D6CF01D17E34000AF1F21 /* Assets.xcassets */; };
 		982D6CF41D17E34000AF1F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */; };
@@ -83,8 +83,8 @@
 		982D6CE51D17E34000AF1F21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		982D6CE71D17E34000AF1F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		982D6CE81D17E34000AF1F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		982D6CEA1D17E34000AF1F21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		982D6CEB1D17E34000AF1F21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		982D6CEA1D17E34000AF1F21 /* ZHLogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLogInViewController.h; sourceTree = "<group>"; };
+		982D6CEB1D17E34000AF1F21 /* ZHLogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLogInViewController.m; sourceTree = "<group>"; };
 		982D6CEE1D17E34000AF1F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		982D6CF01D17E34000AF1F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982D6CF31D17E34000AF1F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -220,14 +220,14 @@
 			children = (
 				982D6CE71D17E34000AF1F21 /* AppDelegate.h */,
 				982D6CE81D17E34000AF1F21 /* AppDelegate.m */,
-				982D6D171D18CDA300AF1F21 /* ZHBaseViewController.h */,
-				982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */,
+				982D6DA51D1BBF1000AF1F21 /* Base */,
+				982D6DA41D1BBEEA00AF1F21 /* ZHHelper */,
 				982D6D881D1A685000AF1F21 /* Catagory */,
 				982D6D7C1D197D9600AF1F21 /* Message */,
 				982D6D411D191CF700AF1F21 /* KeyBoard */,
 				982D6D1B1D18D46E00AF1F21 /* Image */,
-				982D6CEA1D17E34000AF1F21 /* ViewController.h */,
-				982D6CEB1D17E34000AF1F21 /* ViewController.m */,
+				982D6CEA1D17E34000AF1F21 /* ZHLogInViewController.h */,
+				982D6CEB1D17E34000AF1F21 /* ZHLogInViewController.m */,
 				982D6CED1D17E34000AF1F21 /* Main.storyboard */,
 				982D6CF01D17E34000AF1F21 /* Assets.xcassets */,
 				982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */,
@@ -358,20 +358,11 @@
 		982D6D7C1D197D9600AF1F21 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				982D6D981D1A870C00AF1F21 /* ZHUserHelper.h */,
-				982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */,
-				982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */,
-				982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */,
-				982D6D7D1D1A2BE100AF1F21 /* Model */,
-				982D6D871D1A684100AF1F21 /* View */,
-				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
-				982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */,
-				982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */,
-				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
-				982D6D951D1A7C0600AF1F21 /* ZHChatMessageViewController.h */,
-				982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */,
 				982D6DA11D1B76A200AF1F21 /* XMPPManager.h */,
 				982D6DA21D1B76A200AF1F21 /* XMPPManager.m */,
+				982D6DA61D1BBF2700AF1F21 /* Controller */,
+				982D6D7D1D1A2BE100AF1F21 /* Model */,
+				982D6D871D1A684100AF1F21 /* View */,
 			);
 			name = Message;
 			sourceTree = "<group>";
@@ -409,6 +400,39 @@
 				982D6D8D1D1A6A0C00AF1F21 /* UIView+ZH.m */,
 			);
 			name = Catagory;
+			sourceTree = "<group>";
+		};
+		982D6DA41D1BBEEA00AF1F21 /* ZHHelper */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D981D1A870C00AF1F21 /* ZHUserHelper.h */,
+				982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */,
+				982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */,
+				982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */,
+			);
+			name = ZHHelper;
+			sourceTree = "<group>";
+		};
+		982D6DA51D1BBF1000AF1F21 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D171D18CDA300AF1F21 /* ZHBaseViewController.h */,
+				982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		982D6DA61D1BBF2700AF1F21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
+				982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */,
+				982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */,
+				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
+				982D6D951D1A7C0600AF1F21 /* ZHChatMessageViewController.h */,
+				982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		BCA95450FC040D8E5FA50741 /* Pods */ = {
@@ -707,7 +731,7 @@
 				982D6D6B1D191CF700AF1F21 /* FacePanel.m in Sources */,
 				982D6D6D1D191CF700AF1F21 /* MiddleSizePageFaceView.m in Sources */,
 				982D6D831D1A66B700AF1F21 /* ZHUser.m in Sources */,
-				982D6CEC1D17E34000AF1F21 /* ViewController.m in Sources */,
+				982D6CEC1D17E34000AF1F21 /* ZHLogInViewController.m in Sources */,
 				982D6D911D1A705600AF1F21 /* ZHTextMessageCell.m in Sources */,
 				982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */,
 				982D6D971D1A7C0600AF1F21 /* ZHChatMessageViewController.m in Sources */,
