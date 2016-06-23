@@ -25,7 +25,7 @@ static ZHUserHelper *userHelper = nil;
     if (_user == nil) {
         _user = [[ZHUser alloc] init];
         _user.username = @"Bay、栢";
-        _user.userID = @"li-bokun";
+        _user.userID = @"fox@127.0.0.1";
         _user.avatarURL = @"0.jpg";
     }
     return _user;

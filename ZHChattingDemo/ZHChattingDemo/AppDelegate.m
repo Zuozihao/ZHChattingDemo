@@ -22,6 +22,13 @@
     // Override point for customization after application launch.
     //创建xmppstream
     self.xmppStream = [[XMPPStream alloc]init];
+    
+    //创建重写连接组件
+    XMPPReconnect *xmppReconnect= [[XMPPReconnect alloc] init];
+    
+    //使组件生效
+    [xmppReconnect activate:self.xmppStream];
+    
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     self.window.rootViewController = nav;
     return YES;

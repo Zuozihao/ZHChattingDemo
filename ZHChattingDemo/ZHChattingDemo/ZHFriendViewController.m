@@ -7,8 +7,15 @@
 //
 
 #import "ZHFriendViewController.h"
+#import "XMPPManager.h"
 
-@interface ZHFriendViewController ()
+@interface ZHFriendViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    NSInteger count;
+}
+
+@property(nonatomic, strong)UITableView *tableView;
+@property(nonatomic,strong)NSArray *data;
 
 @end
 
@@ -16,8 +23,88 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    
+    [[XMPPManager shareManager] getFreind:^(NSArray *freinds) {
+        [self.tableView reloadData];
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveMsgNotification:)
+                                                 name:kReceiveMessageNotification
+                                               object:nil];
+
+    
     // Do any additional setup after loading the view.
 }
+
+- (void)receiveMsgNotification:(NSNotification *)notification {
+    
+    NSDictionary *msgDic = notification.object;
+    
+    NSString *text = msgDic[@"text"];
+    NSString *fromJid = msgDic[@"jid"];
+    
+    
+    //通过fromJid 到self.data中查找出对应的好友item
+    /*
+     self.data :
+     [
+     {name:...,jid:...},
+     {name:...,jid:...},
+     {name:...,jid:...},
+     ]
+     */
+    [self.data enumerateObjectsUsingBlock:^(NSDictionary *item, NSUInteger idx, BOOL *stop) {
+        
+        NSString *jid = item[@"jid"];
+        if ([jid isEqualToString:fromJid]) {
+            
+            count++;
+            
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:idx inSection:0];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+            UILabel *label = (UILabel *)[cell viewWithTag:100];
+            UILabel *textLabel = (UILabel *)[cell viewWithTag:200];
+            
+            label.hidden = NO;
+            textLabel.hidden = NO;
+            
+            label.text = [NSString stringWithFormat:@"%ld条未读消息",count];
+            
+            textLabel.text = text;
+            
+            [cell setNeedsDisplay];
+            
+            return;
+        }
+        
+    }];
+    
+}
+
+#pragma mark - UITableView delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.data.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"freindCell" forIndexPath:indexPath];
+    
+    NSDictionary *item = self.data[indexPath.item];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:300];
+    label.text = item[@"name"];;
+    
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

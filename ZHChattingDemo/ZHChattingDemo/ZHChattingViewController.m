@@ -20,6 +20,7 @@
 #import "ZHChatMessageViewController.h"
 
 #import "ZHUserHelper.h"
+#import "XMPPManager.h"
 
 @interface ZHChattingViewController ()<ChatKeyBoardDataSource, ChatKeyBoardDelegate,ZHChatMessageViewControllerDelegate>
 {
@@ -61,6 +62,13 @@
     self.chatKeyBoard.placeHolder = @"请输入消息";
     [self.view addSubview:self.chatKeyBoard];
     
+    //4.监听接受消息的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveMsgNotification:)
+                                                 name:kReceiveMessageNotification
+                                               object:nil];
+
+    
 
     // Do any additional setup after loading the view.
 }
@@ -99,7 +107,9 @@
     [self.chatMessageVC addNewMessage:message];
     
     [self.chatMessageVC scrollToBottom];
-
+    
+    //将消息发给服务器
+    [[XMPPManager shareManager] sendMessage:text toUser:@"zuozihao@127.0.0.1"];
 }
 
 - (NSArray<FaceSubjectModel *> *)chatKeyBoardFacePanelSubjectItems
@@ -132,6 +142,29 @@
         [_chatMessageVC setDelegate:self];
     }
     return _chatMessageVC;
+}
+
+
+#pragma mark - NSNotification action 通知的事件方法
+
+//收到消息的通知
+- (void)receiveMsgNotification:(NSNotification *)notification {
+    
+    NSDictionary *msgDic = notification.object;
+    NSString *text = [msgDic objectForKey:@"text"];
+    
+    
+    //2.向data中添加一条数据
+    ZHMessage *msg = [[ZHMessage alloc] init];
+    msg.ownerTyper = TLMessageOwnerTypeOther;
+    
+    msg.text = text;
+    msg.messageType = TLMessageTypeText;
+    msg.from = [ZHUserHelper sharedUserHelper].user;
+    [self.chatMessageVC addNewMessage:msg];
+    
+    [self.chatMessageVC scrollToBottom];
+   
 }
 
 

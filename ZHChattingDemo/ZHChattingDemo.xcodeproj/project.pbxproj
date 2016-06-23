@@ -48,6 +48,7 @@
 		982D6D9A1D1A870C00AF1F21 /* ZHUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */; };
 		982D6D9C1D1A897A00AF1F21 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D9B1D1A897A00AF1F21 /* 0.jpg */; };
 		982D6D9F1D1AC1F800AF1F21 /* ZHChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */; };
+		982D6DA31D1B76A200AF1F21 /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6DA21D1B76A200AF1F21 /* XMPPManager.m */; };
 		D2AE408A009CD453AFD6F1E0 /* libPods-ZHChattingDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84606A05D6C3D85B36241809 /* libPods-ZHChattingDemoTests.a */; };
 		D5CD5C24D4BAA017C9E895C4 /* libPods-ZHChattingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2563399E6CF65093E0D1B27F /* libPods-ZHChattingDemo.a */; };
 		F49F1FB57B831699948D48DC /* libPods-ZHChattingDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */; };
@@ -158,6 +159,8 @@
 		982D6D9B1D1A897A00AF1F21 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChatHelper.h; sourceTree = "<group>"; };
 		982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChatHelper.m; sourceTree = "<group>"; };
+		982D6DA11D1B76A200AF1F21 /* XMPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPManager.h; sourceTree = "<group>"; };
+		982D6DA21D1B76A200AF1F21 /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
 		C13B6A79015BB61ED792CFA1 /* Pods-ZHChattingDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHChattingDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHChattingDemoUITests/Pods-ZHChattingDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHChattingDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -357,6 +360,8 @@
 			children = (
 				982D6D981D1A870C00AF1F21 /* ZHUserHelper.h */,
 				982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */,
+				982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */,
+				982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */,
 				982D6D7D1D1A2BE100AF1F21 /* Model */,
 				982D6D871D1A684100AF1F21 /* View */,
 				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
@@ -365,8 +370,8 @@
 				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
 				982D6D951D1A7C0600AF1F21 /* ZHChatMessageViewController.h */,
 				982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */,
-				982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */,
-				982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */,
+				982D6DA11D1B76A200AF1F21 /* XMPPManager.h */,
+				982D6DA21D1B76A200AF1F21 /* XMPPManager.m */,
 			);
 			name = Message;
 			sourceTree = "<group>";
@@ -720,6 +725,7 @@
 				982D6D8E1D1A6A0C00AF1F21 /* UIView+ZH.m in Sources */,
 				982D6D691D191CF700AF1F21 /* MoreItem.m in Sources */,
 				982D6D701D191CF700AF1F21 /* MorePanel.m in Sources */,
+				982D6DA31D1B76A200AF1F21 /* XMPPManager.m in Sources */,
 				982D6D231D190FB900AF1F21 /* ZHChattingViewController.m in Sources */,
 				982D6D681D191CF700AF1F21 /* FaceSubjectModel.m in Sources */,
 				982D6D861D1A674500AF1F21 /* NSString+ZH.m in Sources */,

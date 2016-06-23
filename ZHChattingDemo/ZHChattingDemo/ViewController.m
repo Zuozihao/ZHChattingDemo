@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZHChattingViewController.h"
+#import "XMPPManager.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,7 @@
     self.view.backgroundColor = RGB(235, 235, 235);
     [self initView];
     //配置接入xmpp服务器的基本设置
-    [self setupStream];
+//    [self setupStream];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -78,98 +79,109 @@
     self.navigationItem.rightBarButtonItem = registerButton;
 }
 
-- (void)setupStream {
-    //获取应用的xmppSteam(通过Application中的单例获取)
-    UIApplication *application = [UIApplication sharedApplication];
-    id delegate = [application delegate];
-    self.xmppStream = [delegate xmppStream];
-    
-    //注册回调
-    [self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    
-    //2.创建
-    XMPPReconnect *xmmppReconnect = [[XMPPReconnect alloc] init];
-    [xmmppReconnect activate:_xmppStream];
-    
-    //3.创建花名册对象，用于维护好友关系的
-    XMPPRosterCoreDataStorage *xmppRosterStoage = [[XMPPRosterCoreDataStorage alloc] init];
-    XMPPRoster *xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:xmppRosterStoage];
-    [xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    [xmppRoster activate:_xmppStream];
-    
-    //4.设置xmpp服务器信息： ip\端口
-    [_xmppStream setHostName:kHostname];
-    //服务器端口
-    [_xmppStream setHostPort:5222];
-}
-
 
 - (void)logInAction {
-    //1.发送连接请求
-    NSString *user = self.userNameField.text;
-    
-    //2.创建用于登陆的JID
-    NSString *jidstring = [NSString stringWithFormat:@"%@@%@",user,kHostname];
-    XMPPJID *jid = [XMPPJID jidWithString:jidstring];
-    
-    [_xmppStream setMyJID:jid];
-    
-    //3.发送连接
-    [_xmppStream connectWithTimeout:30 error:nil];
-}
-
-- (void)goOnline {
-    //上线操作
-    DDXMLElement *el = [DDXMLElement elementWithName:@"presence"];
-    DDXMLElement *available = [DDXMLElement attributeWithName:@"type" stringValue:@"available"];
-    [el addAttribute:available];
-    
-    //发送上线消息
-    [_xmppStream sendElement:el];
-
-}
-
-//1.连接成功
-- (void)xmppStreamDidConnect:(XMPPStream *)sender {
-    
-    NSString *password = self.passwordField.text;
+    [[XMPPManager shareManager] login:self.userNameField.text password:self.passwordField.text successBlock:^{
         
-    //验证登陆密码
-    BOOL isKeyRight = [_xmppStream authenticateWithPassword:password error:nil];
+    }];
     
-}
-
-//2.登陆验证密码成功
-//XMPP
-- (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
-    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-    //登录成功后上线
-    [self goOnline];
+    [[XMPPManager shareManager] goOnline];
     [self.navigationController pushViewController:[ZHChattingViewController new] animated:YES];
 }
 
-//3.登陆密码验证失败
-- (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(NSXMLElement *)error {
-    
-    NSLog(@"%@",error);
-    [SVProgressHUD showErrorWithStatus:@"密码错误"];
-    
-}
-
-//4.注册成功
-- (void)xmppStreamDidRegister:(XMPPStream *)sender {
-    NSLog(@"注册成功");
-}
-
-//5.注册失败
-- (void)xmppStream:(XMPPStream *)sender didNotRegister:(NSXMLElement *)error {
-    NSLog(@"注册失败：%@",error);
-}
-
-
-- (void)goRegiste {
-    
-}
+//- (void)setupStream {
+//    //获取应用的xmppSteam(通过Application中的单例获取)
+//    UIApplication *application = [UIApplication sharedApplication];
+//    id delegate = [application delegate];
+//    self.xmppStream = [delegate xmppStream];
+//    
+//    //注册回调
+//    [self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+//    
+//    //2.创建
+//    XMPPReconnect *xmmppReconnect = [[XMPPReconnect alloc] init];
+//    [xmmppReconnect activate:_xmppStream];
+//    
+//    //3.创建花名册对象，用于维护好友关系的
+//    XMPPRosterCoreDataStorage *xmppRosterStoage = [[XMPPRosterCoreDataStorage alloc] init];
+//    XMPPRoster *xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:xmppRosterStoage];
+//    [xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
+//    [xmppRoster activate:_xmppStream];
+//    
+//    //4.设置xmpp服务器信息： ip\端口
+//    [_xmppStream setHostName:kHostname];
+//    //服务器端口
+//    [_xmppStream setHostPort:5222];
+//}
+//
+//
+//- (void)logInAction {
+//    //1.发送连接请求
+//    NSString *user = self.userNameField.text;
+//    
+//    //2.创建用于登陆的JID
+//    NSString *jidstring = [NSString stringWithFormat:@"%@@%@",user,kHostname];
+//    XMPPJID *jid = [XMPPJID jidWithString:jidstring];
+//    
+//    [_xmppStream setMyJID:jid];
+//    
+//    //3.发送连接
+//    [_xmppStream connectWithTimeout:30 error:nil];
+//}
+//
+//- (void)goOnline {
+//    //上线操作
+//    DDXMLElement *el = [DDXMLElement elementWithName:@"presence"];
+//    DDXMLElement *available = [DDXMLElement attributeWithName:@"type" stringValue:@"available"];
+//    [el addAttribute:available];
+//    
+//    //发送上线消息
+//    [_xmppStream sendElement:el];
+//    [self.navigationController pushViewController:[ZHChattingViewController new] animated:YES];
+//
+//}
+//
+////1.连接成功
+//- (void)xmppStreamDidConnect:(XMPPStream *)sender {
+//    
+//    NSString *password = self.passwordField.text;
+//        
+//    //验证登陆密码
+//    BOOL isKeyRight = [_xmppStream authenticateWithPassword:password error:nil];
+//    
+//}
+//
+////2.登陆验证密码成功
+////XMPP
+//- (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
+//    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+//    //登录成功后上线
+//    [self goOnline];
+//    
+//}
+//
+////3.登陆密码验证失败
+//- (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(NSXMLElement *)error {
+//    
+//    NSLog(@"%@",error);
+//    [SVProgressHUD showErrorWithStatus:@"密码错误"];
+//    
+//}
+//
+////4.注册成功
+//- (void)xmppStreamDidRegister:(XMPPStream *)sender {
+//    NSLog(@"注册成功");
+//}
+//
+////5.注册失败
+//- (void)xmppStream:(XMPPStream *)sender didNotRegister:(NSXMLElement *)error {
+//    NSLog(@"注册失败：%@",error);
+//}
+//
+//
+//- (void)goRegiste {
+//    
+//}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.userNameField resignFirstResponder];
