@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZHChattingViewController.h"
 
 @interface ViewController ()
 
@@ -24,11 +25,8 @@
     
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.title = @"登    录";
-    
     self.view.backgroundColor = RGB(235, 235, 235);
-    
     [self initView];
-    
     //配置接入xmpp服务器的基本设置
     [self setupStream];
     // Do any additional setup after loading the view, typically from a nib.
@@ -144,10 +142,10 @@
 //2.登陆验证密码成功
 //XMPP
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
-    NSLog(@"登陆成功");
     [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-    [self goOnline];
     //登录成功后上线
+    [self goOnline];
+    [self.navigationController pushViewController:[ZHChattingViewController new] animated:YES];
 }
 
 //3.登陆密码验证失败

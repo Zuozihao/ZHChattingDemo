@@ -19,6 +19,35 @@
 		982D6D1D1D18D48000AF1F21 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D1C1D18D48000AF1F21 /* header.jpg */; };
 		982D6D201D190F9900AF1F21 /* ZHFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */; };
 		982D6D231D190FB900AF1F21 /* ZHChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */; };
+		982D6D661D191CF700AF1F21 /* ChatKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D431D191CF700AF1F21 /* ChatKeyBoard.m */; };
+		982D6D671D191CF700AF1F21 /* ChatToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D471D191CF700AF1F21 /* ChatToolBarItem.m */; };
+		982D6D681D191CF700AF1F21 /* FaceSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D491D191CF700AF1F21 /* FaceSubjectModel.m */; };
+		982D6D691D191CF700AF1F21 /* MoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D4B1D191CF700AF1F21 /* MoreItem.m */; };
+		982D6D6A1D191CF700AF1F21 /* FaceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D4F1D191CF700AF1F21 /* FaceButton.m */; };
+		982D6D6B1D191CF700AF1F21 /* FacePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D511D191CF700AF1F21 /* FacePanel.m */; };
+		982D6D6C1D191CF700AF1F21 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D531D191CF700AF1F21 /* FaceView.m */; };
+		982D6D6D1D191CF700AF1F21 /* MiddleSizePageFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D551D191CF700AF1F21 /* MiddleSizePageFaceView.m */; };
+		982D6D6E1D191CF700AF1F21 /* PanelBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D571D191CF700AF1F21 /* PanelBottomView.m */; };
+		982D6D6F1D191CF700AF1F21 /* SmallSizePageFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D591D191CF700AF1F21 /* SmallSizePageFaceView.m */; };
+		982D6D701D191CF700AF1F21 /* MorePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D5C1D191CF700AF1F21 /* MorePanel.m */; };
+		982D6D711D191CF700AF1F21 /* ChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D5F1D191CF700AF1F21 /* ChatToolBar.m */; };
+		982D6D721D191CF700AF1F21 /* OfficialAccountToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D611D191CF700AF1F21 /* OfficialAccountToolbar.m */; };
+		982D6D731D191CF700AF1F21 /* RFRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D631D191CF700AF1F21 /* RFRecordButton.m */; };
+		982D6D741D191CF700AF1F21 /* RFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D651D191CF700AF1F21 /* RFTextView.m */; };
+		982D6D761D192BEB00AF1F21 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D751D192BEB00AF1F21 /* emotion.plist */; };
+		982D6D781D192BF900AF1F21 /* face.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D771D192BF900AF1F21 /* face.plist */; };
+		982D6D7B1D192DE300AF1F21 /* FaceSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D7A1D192DE300AF1F21 /* FaceSourceManager.m */; };
+		982D6D801D1A2C1F00AF1F21 /* ZHMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D7F1D1A2C1F00AF1F21 /* ZHMessage.m */; };
+		982D6D831D1A66B700AF1F21 /* ZHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D821D1A66B700AF1F21 /* ZHUser.m */; };
+		982D6D861D1A674500AF1F21 /* NSString+ZH.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D851D1A674500AF1F21 /* NSString+ZH.m */; };
+		982D6D8B1D1A68F600AF1F21 /* ZHMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D8A1D1A68F600AF1F21 /* ZHMessageCell.m */; };
+		982D6D8E1D1A6A0C00AF1F21 /* UIView+ZH.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D8D1D1A6A0C00AF1F21 /* UIView+ZH.m */; };
+		982D6D911D1A705600AF1F21 /* ZHTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D901D1A705600AF1F21 /* ZHTextMessageCell.m */; };
+		982D6D941D1A713000AF1F21 /* ZHImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D931D1A713000AF1F21 /* ZHImageMessageCell.m */; };
+		982D6D971D1A7C0600AF1F21 /* ZHChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */; };
+		982D6D9A1D1A870C00AF1F21 /* ZHUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */; };
+		982D6D9C1D1A897A00AF1F21 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 982D6D9B1D1A897A00AF1F21 /* 0.jpg */; };
+		982D6D9F1D1AC1F800AF1F21 /* ZHChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */; };
 		D2AE408A009CD453AFD6F1E0 /* libPods-ZHChattingDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84606A05D6C3D85B36241809 /* libPods-ZHChattingDemoTests.a */; };
 		D5CD5C24D4BAA017C9E895C4 /* libPods-ZHChattingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2563399E6CF65093E0D1B27F /* libPods-ZHChattingDemo.a */; };
 		F49F1FB57B831699948D48DC /* libPods-ZHChattingDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */; };
@@ -73,6 +102,62 @@
 		982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHFriendViewController.m; sourceTree = "<group>"; };
 		982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChattingViewController.h; sourceTree = "<group>"; };
 		982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChattingViewController.m; sourceTree = "<group>"; };
+		982D6D421D191CF700AF1F21 /* ChatKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoard.h; sourceTree = "<group>"; };
+		982D6D431D191CF700AF1F21 /* ChatKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatKeyBoard.m; sourceTree = "<group>"; };
+		982D6D441D191CF700AF1F21 /* ChatKeyBoardMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoardMacroDefine.h; sourceTree = "<group>"; };
+		982D6D461D191CF700AF1F21 /* ChatToolBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatToolBarItem.h; sourceTree = "<group>"; };
+		982D6D471D191CF700AF1F21 /* ChatToolBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatToolBarItem.m; sourceTree = "<group>"; };
+		982D6D481D191CF700AF1F21 /* FaceSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceSubjectModel.h; sourceTree = "<group>"; };
+		982D6D491D191CF700AF1F21 /* FaceSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceSubjectModel.m; sourceTree = "<group>"; };
+		982D6D4A1D191CF700AF1F21 /* MoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItem.h; sourceTree = "<group>"; };
+		982D6D4B1D191CF700AF1F21 /* MoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItem.m; sourceTree = "<group>"; };
+		982D6D4E1D191CF700AF1F21 /* FaceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceButton.h; sourceTree = "<group>"; };
+		982D6D4F1D191CF700AF1F21 /* FaceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceButton.m; sourceTree = "<group>"; };
+		982D6D501D191CF700AF1F21 /* FacePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacePanel.h; sourceTree = "<group>"; };
+		982D6D511D191CF700AF1F21 /* FacePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacePanel.m; sourceTree = "<group>"; };
+		982D6D521D191CF700AF1F21 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
+		982D6D531D191CF700AF1F21 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
+		982D6D541D191CF700AF1F21 /* MiddleSizePageFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleSizePageFaceView.h; sourceTree = "<group>"; };
+		982D6D551D191CF700AF1F21 /* MiddleSizePageFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleSizePageFaceView.m; sourceTree = "<group>"; };
+		982D6D561D191CF700AF1F21 /* PanelBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelBottomView.h; sourceTree = "<group>"; };
+		982D6D571D191CF700AF1F21 /* PanelBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelBottomView.m; sourceTree = "<group>"; };
+		982D6D581D191CF700AF1F21 /* SmallSizePageFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallSizePageFaceView.h; sourceTree = "<group>"; };
+		982D6D591D191CF700AF1F21 /* SmallSizePageFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallSizePageFaceView.m; sourceTree = "<group>"; };
+		982D6D5B1D191CF700AF1F21 /* MorePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorePanel.h; sourceTree = "<group>"; };
+		982D6D5C1D191CF700AF1F21 /* MorePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorePanel.m; sourceTree = "<group>"; };
+		982D6D5E1D191CF700AF1F21 /* ChatToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatToolBar.h; sourceTree = "<group>"; };
+		982D6D5F1D191CF700AF1F21 /* ChatToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatToolBar.m; sourceTree = "<group>"; };
+		982D6D601D191CF700AF1F21 /* OfficialAccountToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficialAccountToolbar.h; sourceTree = "<group>"; };
+		982D6D611D191CF700AF1F21 /* OfficialAccountToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfficialAccountToolbar.m; sourceTree = "<group>"; };
+		982D6D621D191CF700AF1F21 /* RFRecordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRecordButton.h; sourceTree = "<group>"; };
+		982D6D631D191CF700AF1F21 /* RFRecordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRecordButton.m; sourceTree = "<group>"; };
+		982D6D641D191CF700AF1F21 /* RFTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTextView.h; sourceTree = "<group>"; };
+		982D6D651D191CF700AF1F21 /* RFTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTextView.m; sourceTree = "<group>"; };
+		982D6D751D192BEB00AF1F21 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		982D6D771D192BF900AF1F21 /* face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = face.plist; sourceTree = "<group>"; };
+		982D6D791D192DE300AF1F21 /* FaceSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceSourceManager.h; sourceTree = "<group>"; };
+		982D6D7A1D192DE300AF1F21 /* FaceSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceSourceManager.m; sourceTree = "<group>"; };
+		982D6D7E1D1A2C1F00AF1F21 /* ZHMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMessage.h; sourceTree = "<group>"; };
+		982D6D7F1D1A2C1F00AF1F21 /* ZHMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMessage.m; sourceTree = "<group>"; };
+		982D6D811D1A66B700AF1F21 /* ZHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHUser.h; sourceTree = "<group>"; };
+		982D6D821D1A66B700AF1F21 /* ZHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHUser.m; sourceTree = "<group>"; };
+		982D6D841D1A674500AF1F21 /* NSString+ZH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZH.h"; sourceTree = "<group>"; };
+		982D6D851D1A674500AF1F21 /* NSString+ZH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZH.m"; sourceTree = "<group>"; };
+		982D6D891D1A68F600AF1F21 /* ZHMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMessageCell.h; sourceTree = "<group>"; };
+		982D6D8A1D1A68F600AF1F21 /* ZHMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMessageCell.m; sourceTree = "<group>"; };
+		982D6D8C1D1A6A0C00AF1F21 /* UIView+ZH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZH.h"; sourceTree = "<group>"; };
+		982D6D8D1D1A6A0C00AF1F21 /* UIView+ZH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZH.m"; sourceTree = "<group>"; };
+		982D6D8F1D1A705600AF1F21 /* ZHTextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHTextMessageCell.h; sourceTree = "<group>"; };
+		982D6D901D1A705600AF1F21 /* ZHTextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHTextMessageCell.m; sourceTree = "<group>"; };
+		982D6D921D1A713000AF1F21 /* ZHImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHImageMessageCell.h; sourceTree = "<group>"; };
+		982D6D931D1A713000AF1F21 /* ZHImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHImageMessageCell.m; sourceTree = "<group>"; };
+		982D6D951D1A7C0600AF1F21 /* ZHChatMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChatMessageViewController.h; sourceTree = "<group>"; };
+		982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChatMessageViewController.m; sourceTree = "<group>"; };
+		982D6D981D1A870C00AF1F21 /* ZHUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHUserHelper.h; sourceTree = "<group>"; };
+		982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHUserHelper.m; sourceTree = "<group>"; };
+		982D6D9B1D1A897A00AF1F21 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHChatHelper.h; sourceTree = "<group>"; };
+		982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHChatHelper.m; sourceTree = "<group>"; };
 		C13B6A79015BB61ED792CFA1 /* Pods-ZHChattingDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHChattingDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHChattingDemoUITests/Pods-ZHChattingDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809AD2B49F7E9C77FF2ACC7 /* libPods-ZHChattingDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHChattingDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,17 +215,16 @@
 		982D6CE31D17E34000AF1F21 /* ZHChattingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				982D6D1B1D18D46E00AF1F21 /* Image */,
 				982D6CE71D17E34000AF1F21 /* AppDelegate.h */,
 				982D6CE81D17E34000AF1F21 /* AppDelegate.m */,
 				982D6D171D18CDA300AF1F21 /* ZHBaseViewController.h */,
 				982D6D181D18CDA300AF1F21 /* ZHBaseViewController.m */,
+				982D6D881D1A685000AF1F21 /* Catagory */,
+				982D6D7C1D197D9600AF1F21 /* Message */,
+				982D6D411D191CF700AF1F21 /* KeyBoard */,
+				982D6D1B1D18D46E00AF1F21 /* Image */,
 				982D6CEA1D17E34000AF1F21 /* ViewController.h */,
 				982D6CEB1D17E34000AF1F21 /* ViewController.m */,
-				982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */,
-				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
-				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
-				982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */,
 				982D6CED1D17E34000AF1F21 /* Main.storyboard */,
 				982D6CF01D17E34000AF1F21 /* Assets.xcassets */,
 				982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */,
@@ -155,6 +239,8 @@
 			children = (
 				982D6CE51D17E34000AF1F21 /* main.m */,
 				982D6D1A1D18CF8500AF1F21 /* PrefixHeader.pch */,
+				982D6D771D192BF900AF1F21 /* face.plist */,
+				982D6D751D192BEB00AF1F21 /* emotion.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,9 +266,144 @@
 		982D6D1B1D18D46E00AF1F21 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				982D6D9B1D1A897A00AF1F21 /* 0.jpg */,
 				982D6D1C1D18D48000AF1F21 /* header.jpg */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		982D6D411D191CF700AF1F21 /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D791D192DE300AF1F21 /* FaceSourceManager.h */,
+				982D6D7A1D192DE300AF1F21 /* FaceSourceManager.m */,
+				982D6D421D191CF700AF1F21 /* ChatKeyBoard.h */,
+				982D6D431D191CF700AF1F21 /* ChatKeyBoard.m */,
+				982D6D441D191CF700AF1F21 /* ChatKeyBoardMacroDefine.h */,
+				982D6D451D191CF700AF1F21 /* Models */,
+				982D6D4C1D191CF700AF1F21 /* Views */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		982D6D451D191CF700AF1F21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D461D191CF700AF1F21 /* ChatToolBarItem.h */,
+				982D6D471D191CF700AF1F21 /* ChatToolBarItem.m */,
+				982D6D481D191CF700AF1F21 /* FaceSubjectModel.h */,
+				982D6D491D191CF700AF1F21 /* FaceSubjectModel.m */,
+				982D6D4A1D191CF700AF1F21 /* MoreItem.h */,
+				982D6D4B1D191CF700AF1F21 /* MoreItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		982D6D4C1D191CF700AF1F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D4D1D191CF700AF1F21 /* FacePanel */,
+				982D6D5A1D191CF700AF1F21 /* MorePanel */,
+				982D6D5D1D191CF700AF1F21 /* ToolBarPanel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		982D6D4D1D191CF700AF1F21 /* FacePanel */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D4E1D191CF700AF1F21 /* FaceButton.h */,
+				982D6D4F1D191CF700AF1F21 /* FaceButton.m */,
+				982D6D501D191CF700AF1F21 /* FacePanel.h */,
+				982D6D511D191CF700AF1F21 /* FacePanel.m */,
+				982D6D521D191CF700AF1F21 /* FaceView.h */,
+				982D6D531D191CF700AF1F21 /* FaceView.m */,
+				982D6D541D191CF700AF1F21 /* MiddleSizePageFaceView.h */,
+				982D6D551D191CF700AF1F21 /* MiddleSizePageFaceView.m */,
+				982D6D561D191CF700AF1F21 /* PanelBottomView.h */,
+				982D6D571D191CF700AF1F21 /* PanelBottomView.m */,
+				982D6D581D191CF700AF1F21 /* SmallSizePageFaceView.h */,
+				982D6D591D191CF700AF1F21 /* SmallSizePageFaceView.m */,
+			);
+			path = FacePanel;
+			sourceTree = "<group>";
+		};
+		982D6D5A1D191CF700AF1F21 /* MorePanel */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D5B1D191CF700AF1F21 /* MorePanel.h */,
+				982D6D5C1D191CF700AF1F21 /* MorePanel.m */,
+			);
+			path = MorePanel;
+			sourceTree = "<group>";
+		};
+		982D6D5D1D191CF700AF1F21 /* ToolBarPanel */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D5E1D191CF700AF1F21 /* ChatToolBar.h */,
+				982D6D5F1D191CF700AF1F21 /* ChatToolBar.m */,
+				982D6D601D191CF700AF1F21 /* OfficialAccountToolbar.h */,
+				982D6D611D191CF700AF1F21 /* OfficialAccountToolbar.m */,
+				982D6D621D191CF700AF1F21 /* RFRecordButton.h */,
+				982D6D631D191CF700AF1F21 /* RFRecordButton.m */,
+				982D6D641D191CF700AF1F21 /* RFTextView.h */,
+				982D6D651D191CF700AF1F21 /* RFTextView.m */,
+			);
+			path = ToolBarPanel;
+			sourceTree = "<group>";
+		};
+		982D6D7C1D197D9600AF1F21 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D981D1A870C00AF1F21 /* ZHUserHelper.h */,
+				982D6D991D1A870C00AF1F21 /* ZHUserHelper.m */,
+				982D6D7D1D1A2BE100AF1F21 /* Model */,
+				982D6D871D1A684100AF1F21 /* View */,
+				982D6D211D190FB900AF1F21 /* ZHChattingViewController.h */,
+				982D6D221D190FB900AF1F21 /* ZHChattingViewController.m */,
+				982D6D1E1D190F9900AF1F21 /* ZHFriendViewController.h */,
+				982D6D1F1D190F9900AF1F21 /* ZHFriendViewController.m */,
+				982D6D951D1A7C0600AF1F21 /* ZHChatMessageViewController.h */,
+				982D6D961D1A7C0600AF1F21 /* ZHChatMessageViewController.m */,
+				982D6D9D1D1AC1F800AF1F21 /* ZHChatHelper.h */,
+				982D6D9E1D1AC1F800AF1F21 /* ZHChatHelper.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		982D6D7D1D1A2BE100AF1F21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D7E1D1A2C1F00AF1F21 /* ZHMessage.h */,
+				982D6D7F1D1A2C1F00AF1F21 /* ZHMessage.m */,
+				982D6D811D1A66B700AF1F21 /* ZHUser.h */,
+				982D6D821D1A66B700AF1F21 /* ZHUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		982D6D871D1A684100AF1F21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D891D1A68F600AF1F21 /* ZHMessageCell.h */,
+				982D6D8A1D1A68F600AF1F21 /* ZHMessageCell.m */,
+				982D6D8F1D1A705600AF1F21 /* ZHTextMessageCell.h */,
+				982D6D901D1A705600AF1F21 /* ZHTextMessageCell.m */,
+				982D6D921D1A713000AF1F21 /* ZHImageMessageCell.h */,
+				982D6D931D1A713000AF1F21 /* ZHImageMessageCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		982D6D881D1A685000AF1F21 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				982D6D841D1A674500AF1F21 /* NSString+ZH.h */,
+				982D6D851D1A674500AF1F21 /* NSString+ZH.m */,
+				982D6D8C1D1A6A0C00AF1F21 /* UIView+ZH.h */,
+				982D6D8D1D1A6A0C00AF1F21 /* UIView+ZH.m */,
+			);
+			name = Catagory;
 			sourceTree = "<group>";
 		};
 		BCA95450FC040D8E5FA50741 /* Pods */ = {
@@ -324,8 +545,11 @@
 			files = (
 				982D6CF41D17E34000AF1F21 /* LaunchScreen.storyboard in Resources */,
 				982D6CF11D17E34000AF1F21 /* Assets.xcassets in Resources */,
+				982D6D761D192BEB00AF1F21 /* emotion.plist in Resources */,
+				982D6D9C1D1A897A00AF1F21 /* 0.jpg in Resources */,
 				982D6CEF1D17E34000AF1F21 /* Main.storyboard in Resources */,
 				982D6D1D1D18D48000AF1F21 /* header.jpg in Resources */,
+				982D6D781D192BF900AF1F21 /* face.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,12 +697,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982D6D661D191CF700AF1F21 /* ChatKeyBoard.m in Sources */,
+				982D6D801D1A2C1F00AF1F21 /* ZHMessage.m in Sources */,
+				982D6D6B1D191CF700AF1F21 /* FacePanel.m in Sources */,
+				982D6D6D1D191CF700AF1F21 /* MiddleSizePageFaceView.m in Sources */,
+				982D6D831D1A66B700AF1F21 /* ZHUser.m in Sources */,
 				982D6CEC1D17E34000AF1F21 /* ViewController.m in Sources */,
+				982D6D911D1A705600AF1F21 /* ZHTextMessageCell.m in Sources */,
 				982D6D191D18CDA300AF1F21 /* ZHBaseViewController.m in Sources */,
+				982D6D971D1A7C0600AF1F21 /* ZHChatMessageViewController.m in Sources */,
 				982D6CE91D17E34000AF1F21 /* AppDelegate.m in Sources */,
+				982D6D731D191CF700AF1F21 /* RFRecordButton.m in Sources */,
+				982D6D9F1D1AC1F800AF1F21 /* ZHChatHelper.m in Sources */,
+				982D6D8B1D1A68F600AF1F21 /* ZHMessageCell.m in Sources */,
+				982D6D721D191CF700AF1F21 /* OfficialAccountToolbar.m in Sources */,
 				982D6D201D190F9900AF1F21 /* ZHFriendViewController.m in Sources */,
+				982D6D9A1D1A870C00AF1F21 /* ZHUserHelper.m in Sources */,
+				982D6D6C1D191CF700AF1F21 /* FaceView.m in Sources */,
+				982D6D6E1D191CF700AF1F21 /* PanelBottomView.m in Sources */,
+				982D6D7B1D192DE300AF1F21 /* FaceSourceManager.m in Sources */,
+				982D6D711D191CF700AF1F21 /* ChatToolBar.m in Sources */,
+				982D6D8E1D1A6A0C00AF1F21 /* UIView+ZH.m in Sources */,
+				982D6D691D191CF700AF1F21 /* MoreItem.m in Sources */,
+				982D6D701D191CF700AF1F21 /* MorePanel.m in Sources */,
 				982D6D231D190FB900AF1F21 /* ZHChattingViewController.m in Sources */,
+				982D6D681D191CF700AF1F21 /* FaceSubjectModel.m in Sources */,
+				982D6D861D1A674500AF1F21 /* NSString+ZH.m in Sources */,
+				982D6D671D191CF700AF1F21 /* ChatToolBarItem.m in Sources */,
+				982D6D6F1D191CF700AF1F21 /* SmallSizePageFaceView.m in Sources */,
+				982D6D6A1D191CF700AF1F21 /* FaceButton.m in Sources */,
+				982D6D741D191CF700AF1F21 /* RFTextView.m in Sources */,
 				982D6CE61D17E34000AF1F21 /* main.m in Sources */,
+				982D6D941D1A713000AF1F21 /* ZHImageMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

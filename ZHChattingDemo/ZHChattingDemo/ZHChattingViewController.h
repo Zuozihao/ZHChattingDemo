@@ -7,7 +7,12 @@
 //
 
 #import "ZHBaseViewController.h"
+#import "ZHUser.h"
 
 @interface ZHChattingViewController : ZHBaseViewController
+
+@property (nonatomic, strong) ZHUser *user;
+
+@property (nonatomic, strong) NSMutableArray *data;
 
 @end
