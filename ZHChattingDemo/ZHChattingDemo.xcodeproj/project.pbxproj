@@ -218,20 +218,18 @@
 		982D6CE31D17E34000AF1F21 /* ZHChattingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				982D6CE71D17E34000AF1F21 /* AppDelegate.h */,
-				982D6CE81D17E34000AF1F21 /* AppDelegate.m */,
 				982D6DA51D1BBF1000AF1F21 /* Base */,
 				982D6DA41D1BBEEA00AF1F21 /* ZHHelper */,
 				982D6D881D1A685000AF1F21 /* Catagory */,
 				982D6D7C1D197D9600AF1F21 /* Message */,
 				982D6D411D191CF700AF1F21 /* KeyBoard */,
 				982D6D1B1D18D46E00AF1F21 /* Image */,
+				982D6CE71D17E34000AF1F21 /* AppDelegate.h */,
+				982D6CE81D17E34000AF1F21 /* AppDelegate.m */,
 				982D6CEA1D17E34000AF1F21 /* ZHLogInViewController.h */,
 				982D6CEB1D17E34000AF1F21 /* ZHLogInViewController.m */,
 				982D6CED1D17E34000AF1F21 /* Main.storyboard */,
-				982D6CF01D17E34000AF1F21 /* Assets.xcassets */,
 				982D6CF21D17E34000AF1F21 /* LaunchScreen.storyboard */,
-				982D6CF51D17E34000AF1F21 /* Info.plist */,
 				982D6CE41D17E34000AF1F21 /* Supporting Files */,
 			);
 			path = ZHChattingDemo;
@@ -240,6 +238,8 @@
 		982D6CE41D17E34000AF1F21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				982D6CF51D17E34000AF1F21 /* Info.plist */,
+				982D6CF01D17E34000AF1F21 /* Assets.xcassets */,
 				982D6CE51D17E34000AF1F21 /* main.m */,
 				982D6D1A1D18CF8500AF1F21 /* PrefixHeader.pch */,
 				982D6D771D192BF900AF1F21 /* face.plist */,
