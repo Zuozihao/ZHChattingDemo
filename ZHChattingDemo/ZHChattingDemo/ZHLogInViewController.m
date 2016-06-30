@@ -17,6 +17,8 @@
 
 @property(strong, nonatomic)XMPPStream * xmppStream;
 
+
+
 @end
 
 @implementation ZHLogInViewController
